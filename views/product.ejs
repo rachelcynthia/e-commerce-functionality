@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Products</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+        crossorigin="anonymous">
+        </script>
+        <link href='/assets/style.css' rel='stylesheet' type='text/css'>
+        <script src="/assets/product-list.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>The Products Page</h1>
+        <div id="add_new">
+        <h3>Add a new Product</h3>
+        <form method="POST">
+            <input type="text" class='offset-3 col-6' required/>
+            <button type="submit" class="btn btn-info add-btn" >Add Item</button>
+        </form>
+        </div>
+        <div id="selected">
+        <h3>Selected Products</h3>
+        <h5>(Click to remove)</h5>
+        </div>
+        <div class="container">
+        <div class="offset-4 col-4">
+        <ul>
+        <% for(var i=0;i<product.length;i++){ %>
+        
+                <li class='product-li'> <%=product[i].item%></li>
+        <% } %>
+        </ul>  
+    </div>
+    <a href ="cart"><button type="button" class="btn btn-primary offset-4 col-6">View Cart</button></a>
+        </div>   
+    </body>
+</html>

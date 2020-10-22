@@ -1,0 +1,37 @@
+body{
+    background-color: black !important;
+    color:white !important;
+    font-family: cursive !important;
+    margin:0 !important;
+}
+h1{
+    color:crimson;
+    text-align: center;
+    background-color: rgba(248, 237, 237, 0.89);
+    margin:0;
+}
+h3{
+    text-align: center;
+    color: aqua;
+}
+h5{
+    text-align: center;
+    color:blueviolet;
+}
+input{
+    width:50%;
+    height: 35px;
+    margin-left:100px;
+}
+.add-btn{
+    height:40px;
+}
+ul{
+    list-style-type: square
+}
+a{
+    text-decoration: none;
+}
+.product-li:hover{
+    text-decoration: line-through;
+}
